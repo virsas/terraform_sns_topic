@@ -1,10 +1,10 @@
-# tfmod_sns_topic
+# terraform_sns_topic
 
 Terraform module to create SNS topics.
 
 ## Dependencies
 
-KMS <https://github.com/virsas/tfmod_kms>
+KMS <https://github.com/virsas/terraform_kms>
 
 ## Terraform example
 
@@ -13,7 +13,7 @@ KMS <https://github.com/virsas/tfmod_kms>
 # SNS topic
 ##################
 module "sns_topic_alarms" {
-  source = "github.com/virsas/tfmod_sns_topic"
+  source = "github.com/virsas/terraform_sns_topic"
   name = "alarms"
   kms = module.kms-sns.arn
 }
