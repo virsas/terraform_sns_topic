@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_sns_topic" "sns" {
   name              = var.name
   kms_master_key_id = var.kms
