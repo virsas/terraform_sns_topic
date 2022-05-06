@@ -35,14 +35,10 @@ Name is the same as the name of the SNS topic
 ``` JSON
 {
   "Version": "2008-10-17",
-  "Id": "__default_policy_ID",
   "Statement": [
     {
-      "Sid": "__default_statement_ID",
       "Effect": "Allow",
-      "Principal": {
-        "AWS": "*"
-      },
+      "Principal": { "AWS": "*" },
       "Action": [
         "SNS:GetTopicAttributes",
         "SNS:SetTopicAttributes",
@@ -54,11 +50,7 @@ Name is the same as the name of the SNS topic
         "SNS:Publish"
       ],
       "Resource": "arn:aws:sns:eu-west-1:123456789012:alarms",
-      "Condition": {
-        "StringEquals": {
-          "AWS:SourceOwner": "123456789012"
-        }
-      }
+      "Condition": { "StringEquals": { "AWS:SourceOwner": "123456789012" } }
     }
   ]
 }
