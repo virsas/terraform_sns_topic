@@ -4,7 +4,7 @@ Terraform module to create SNS topics.
 
 ## Dependencies
 
-KMS <https://github.com/virsas/terraform_kms>
+- KMS <https://github.com/virsas/terraform_kms>
 
 ## Terraform example
 
