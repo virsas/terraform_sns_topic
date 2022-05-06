@@ -27,7 +27,7 @@ You require to create two polices located in ./json/sns directory
 
 ``` bash
 # Path 
-./json/sns/access/NAME.json
+./json/sns_access/NAME.json
 ```
 
 Name is the same as the name of the SNS topic
@@ -70,7 +70,7 @@ Name is the same as the name of the SNS topic
 
 ``` bash
 # Path 
-./json/sns/delivery/NAME.json
+./json/sns_delivery/NAME.json
 ```
 
 Name is the same as the name of the SNS topic
