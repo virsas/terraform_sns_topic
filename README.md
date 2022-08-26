@@ -13,7 +13,7 @@ Terraform module to create SNS topics.
 # SNS topic
 ##################
 module "sns_topic_alarms" {
-  source = "github.com/virsas/terraform_sns_topic"
+  source = "git::https://github.com/virsas/terraform_sns_topic.git?ref=v1.0.0"
   name = "alarms"
   kms = module.kms-sns.arn
 }
